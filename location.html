@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<center><img src="mylogo.png" alt="Logo" style="width:290px;height:115px;"></center>
+<center><b><p><font color="#ff9900">Doing Good Things For The Goldfish Hobby</font></p></b></center>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>'
+<div style="margin:0 auto; width:85%;">
+<div>
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="#">For Sales</a>
+	<ul>
+<li><a href="ran.html">Ranchu</a></li>
+<li><a href="ry.html">Ryuken</a></li>
+<li><a href="but.html">Butterfly</a></li>
+<li><a href="or.html">Oranda</a></li>
+<li><a href="gp.html">Goldfhish Pellets</a></li>
+</ul>
+</li>
+<li><a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="location.html">Location</a></li>
+</ul>
+</li>
+<li><a href="#">Gallery</a>
+<ul>
+<li><a href="img.html">Image</a></li>
+<li><a href="vid.html">Vidoes</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<style>
+*{
+margine:0;
+padding:0;
+}
+#map{
+height:500px;
+width:100%;
+}
+</style>
+</head>
+<br></br>
+<center><h1><font color="#ff9900">Map</font></h1></center>
+<center><h2><font color="#ff9900">Rato's Goldfish Online Sale | Philippines</font></h2></center>
+<center><p><font color="#ff9900">Goldfish Enthusiast</font></p></center>
+<center><h2><font color="#ff9900">Location In</font></h2></center>
+<center><h2><font color="#ff9900">GoldenShower St. Mintal Davao City</font></h2></center>
+<body>
+<div id="map"></div>
+<script>
+function initMap(){
+var location = {lat: 7.088281, lng:125.503670};
+var map = new google.maps.Map(document.getElementById("map"),{
+zoom:15,
+center: location
+});
+var marker = new google.maps.Marker({
+position: location,
+map: map
+});
+}
+</script>
+<script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBtXAaNKgKfsxybKiF5ksVsCyKLwPzb0Yk&callback=initMap"></script>
+</body>
+</html>
